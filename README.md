@@ -1,5 +1,5 @@
 # tetrisBot-2.0
-The bot offers automatic playing using the standard Tetris-clear strategy. This is achieved by bruteforcing combinations of pieces not resulting in gaps and evaluating the resulting boards to a given score. This is done recursively and the bot can search N moves into the future. The tests below show how many lines were clearede before the bot was unable to find a move under the height limitation with no gaps where N = 3: 
+The bot offers automatic playing using the standard Tetris-clear strategy. This is achieved by bruteforcing combinations of pieces not resulting in gaps and evaluating the resulting boards to a given score. This is done recursively and the bot can search N moves into the future. The tests below show how many lines were cleared before the bot was unable to find a move under the height limitation with no gaps where N = 3: 
 Test | 1 | 2 | 3 | 4 | 5
 --- | --- | --- | --- |--- |---
 Lines cleared | 3164 | 3644 | 672 | 6028 | 4164
