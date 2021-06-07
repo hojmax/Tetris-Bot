@@ -7,4 +7,4 @@ Lines cleared | 3164 | 3644 | 672 | 6028 | 4164
 It is to be mentioned that this bot fails at the first move approximately 6.7% of the time. This is due to the fact that any combinations of the s and z piece in the first 2 positions of the queue, or the s, z, and o piece in the first 3 positions, will not leave any moves resulting in no gaps. There is a very simple way of handling this exception (placing the troubling piece left-most and ensuring that all of the resulting gaps land in the empty column.) which I employed in my earlier version of the Tetris bot. This can be used to not only the resolve the starting exception, but also prolong the point of no valid moves. This is currently not implemented.
 
 ## See the project live
-https://github.com/hojmax/tetrisBot-2.0
+https://hojmax.github.io/tetrisBot-2.0/
