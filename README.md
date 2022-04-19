@@ -2,7 +2,7 @@
 ## 📝 Description
 This project is a implementation of a Tetris bot which can play automatically by performing tetrises[^1]. The bot looks recursively **n** moves into the future, evaluates the board, and chooses the move which leads to the board state with the best score. This is achieved by bruteforcing combinations of pieces in the queue not resulting in holes. This includes swapping pieces in and out of the hold queue. 
 
-[^1]: A 'tetris' refers to clearing 4 lines simultaneously. This can only be done by dropping an [**I** piece](https://tetris.fandom.com/wiki/I-Block). 
+[^1]: A 'tetris' refers to clearing 4 lines simultaneously. This can only be done by dropping an i-piece.
 
 ## 🖥 [Live Demo](https://hojmax.github.io/Tetris-Bot/)
 ![](/images/playing.gif)
