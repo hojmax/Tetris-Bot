@@ -1,7 +1,7 @@
 # tetrisBot-2.0
 
 The bot offers automatic playing using the standard Tetris-clear strategy. This is achieved by bruteforcing combinations of pieces not resulting in gaps and evaluating the resulting boards to a given score. This is done recursively and the bot can search N moves into the future. 
-### Live Demo
+## Live Demo
 https://hojmax.github.io/tetrisBot-2.0/
 
 ## Testing
