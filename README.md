@@ -4,6 +4,7 @@ The bot offers automatic playing using the standard Tetris-clear strategy. This 
 ### Live Demo
 https://hojmax.github.io/tetrisBot-2.0/
 
+## Testing
 The tests below show how many lines were cleared before the bot was unable to find a move under the height limitation with no gaps where N = 3: 
 Test | 1 | 2 | 3 | 4 | 5
 --- | --- | --- | --- |--- |---
