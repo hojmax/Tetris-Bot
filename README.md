@@ -1,13 +1,15 @@
-# tetrisBot-2.0
+# Tetris Bot
+## 📝 Description
+This project is a implementation of a Tetris bot which can play automatically by performing tetrises[^1]. The bot looks recursively **n** moves into the future, evaluates the board, and chooses the move which leads to the board state with the best score. This is achieved by bruteforcing combinations of pieces in the queue not resulting in holes. This includes swapping pieces in and out of the hold queue. 
 
-The bot offers automatic playing using the standard Tetris-clear strategy. This is achieved by bruteforcing combinations of pieces not resulting in gaps and evaluating the resulting boards to a given score. This is done recursively and the bot can search N moves into the future. 
-## Live Demo
-https://hojmax.github.io/tetrisBot-2.0/
+[^1]: A 'tetris' refers to clearing 4 lines simultaneously. This can only be done by dropping an [**I** piece](https://tetris.fandom.com/wiki/I-Block). 
 
-## Testing
-The tests below show how many lines were cleared before the bot was unable to find a move under the height limitation with no gaps where N = 3: 
-Test | 1 | 2 | 3 | 4 | 5
---- | --- | --- | --- |--- |---
-Lines cleared | 3164 | 3644 | 672 | 6028 | 4164
+## 🖥 [Live Demo](https://hojmax.github.io/Tetris-Bot/)
+![](/images/playing.gif)
 
-It is to be mentioned that this bot fails at the first move approximately 6.7% of the time. This is due to the fact that any combinations of the s and z piece in the first 2 positions of the queue, or the s, z, and o piece in the first 3 positions, will not leave any moves resulting in no gaps. There is a very simple way of handling this exception (placing the troubling piece left-most and ensuring that all of the resulting gaps land in the empty column.) which I employed in my earlier version of the Tetris bot. This can be used to not only the resolve the starting exception, but also prolong the point of no valid moves. This is currently not implemented.
+## 🚧 Limitations
+It is to be mentioned that this bot fails on the first move approximately 6.7% of the time. This is due to the fact that any combinations of the **s** and **z** piece in the first 2 positions of the queue, or the **s**, **z**, and **o** piece in the first 3 positions, will not leave any moves resulting in no holes[^2]. There is a very simple way of handling this exception which I employed in a previous version of the Tetris bot. You can place the troubling piece left-most and rotate in such a manor that the resulting holes always land in the empty column. This can be used to not only the resolve the starting exception, but also prolong the point of no valid moves. This is currently not implemented.
+
+[^2]: If you are unfamiliar with the piece names (e.g. **s**, **z** and so on), you can read [here](https://en.wikipedia.org/wiki/Tetromino#One-sided_tetrominoes).
+## 🏄‍♂️ Usage
+As this project is built using vanilla javascript, all you need is to open `index.html` in your browser. Press **SPACE** for placing pieces one at a time, and **R** for repeated placements. Note that the bot only places a piece if there is an avalaible move that results in no holes and respects the height limit. Refresh the page in case it gets stuck.
