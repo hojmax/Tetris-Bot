@@ -4,7 +4,7 @@ This project is an implementation of a bot which can play automatically by perfo
 
 ![](/images/playing.gif)
 
-[^1]: A 'tetris' refers to clearing 4 lines simultaneously. This can only be done by dropping an i-piece.
+[^1]: A 'tetris' refers to clearing 4 lines simultaneously. This can only be done by dropping an **i** piece.
 
 ## 🖥 [Live Demo](https://hojmax.github.io/Tetris-Bot/)
 
