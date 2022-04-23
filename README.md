@@ -6,7 +6,9 @@ This project is an implementation of a bot which can play automatically by perfo
 
 [^1]: A 'tetris' refers to clearing 4 lines simultaneously. This can only be done by dropping an **i** piece.
 
-## 🖥 [Live Demo](https://hojmax.github.io/Tetris-Bot/)
+## 🖥 Live Demo
+
+You can view the project [here](https://hojmax.github.io/Tetris-Bot/).
 
 ## 🚧 Limitations
 It is to be mentioned that this bot fails on the first move approximately 6.7% of the time. This is due to the fact that any combinations of the **s** and **z** piece in the first 2 positions of the queue, or the **s**, **z**, and **o** piece in the first 3 positions, will not leave any moves resulting in no holes[^2]. There is a very simple way of handling this exception which I employed in a previous version of the Tetris bot. You can place the troubling piece left-most and rotate it in such a manor that the resulting holes always land in the empty column. This can be used to not only the resolve the starting exception, but also prolong the point of no valid moves. This is currently not implemented.
